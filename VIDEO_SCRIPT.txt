@@ -4,7 +4,7 @@ Open output/presentation/price-guard-research-beamer.pdf full screen. Record you
 
 SLIDE 1 — Title — 0:00–0:25
 
-I'm Mohammadpayam Taebi, affiliated with the Chinese University of Hong Kong. This project asks a simple question: if a pricing safeguard checks each decision locally, what can it promise customers over many rounds? Our answer separates a mathematical guarantee from what particular learning agents actually do.
+I'm Mohammadpayam Taebi. My teammate is Arad Maleki, and our team is Boozines. We are both affiliated with the Chinese University of Hong Kong. This project asks a simple question: if a pricing safeguard checks each decision locally, what can it promise customers over many rounds? Our answer separates a mathematical guarantee from what particular learning agents actually do.
 
 SLIDE 2 — The pricing game — 0:25–1:00
 

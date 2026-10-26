@@ -1,7 +1,7 @@
 # When a Local Pricing Guard Is Not a Welfare Promise
 
-**Mohammadpayam Taebi — The Chinese University of Hong Kong (CUHK)**  
-AI Collusion Research Sprint, October 2026 · Team Local Pricing Guard (solo)
+**Mohammadpayam Taebi and Arad Maleki — The Chinese University of Hong Kong (CUHK)**  
+AI Collusion Research Sprint, October 2026 · Team Boozines
 
 ## For judges
 
@@ -9,7 +9,7 @@ AI Collusion Research Sprint, October 2026 · Team Local Pricing Guard (solo)
 - **[Read the final report](report.pdf)** — eight main pages, references and appendices follow.
 - **[Seven-slide presentation](slides.pdf)** and [four-minute recording script](VIDEO_SCRIPT.txt).
 - [Editable report source](latex/report/main.tex) and [Beamer source](latex/slides/main.tex).
-- [Evidence and downloadable release](https://github.com/aqaPayam/local-pricing-guard/releases/tag/submission-v1).
+- [Evidence and downloadable release](https://github.com/aqaPayam/local-pricing-guard/releases/tag/submission-v2).
 
 ## What we found
 
@@ -50,9 +50,10 @@ have complete independent training replay. Repeated engineering checks do not
 increase the scientific sample size.
 
 The GitHub Pages build changes URL paths for hosting. `report.pdf` and
-`slides.pdf` are the current LaTeX versions. Older versioned PDFs retain their
-historical author spelling and metadata; use the current unversioned files for
-submission. No experiment was rerun to make the static website.
+`slides.pdf` are the current LaTeX versions. Older versioned PDFs and frozen evidence archives retain their historical
+author metadata. The current submission is team Boozines, with Mohammadpayam
+Taebi and Arad Maleki, both at CUHK. Use the current unversioned PDFs or the
+submission-v2 release for submission. No experiment was rerun to make the static website.
 
 ## Prior work, contribution and assistance
 
@@ -65,6 +66,6 @@ guarantee audit and source-frozen controlled comparisons, not a new learning
 algorithm. See the report for references, assumptions and ethical limitations.
 
 Codex and collaborating AI agents substantially implemented, analyzed, checked
-and drafted this work under the named author's direction. AI-agent checks are
+and drafted this work under the named authors' direction. AI-agent checks are
 not independent human peer review. The report states the scope of that
 assistance and the earlier exploratory material excluded from its evidence.
