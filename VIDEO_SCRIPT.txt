@@ -1,31 +1,91 @@
-VIDEO RECORDING SCRIPT — approximately 4 minutes
+EASY VIDEO SCRIPT - about 4 to 5 minutes at a slow pace
 
-Open output/presentation/price-guard-research-beamer.pdf full screen. Record your screen and microphone while advancing through its seven slides. Read only the paragraphs, not these headings or timing labels. Speak slowly and pause briefly at each chart. No live game recording is required.
+Open the seven slides. Read only the lines under each slide heading.
+Pause at the end of each line. Change slides at each new heading.
+"Q-learning" is said "cue learning". The numbers are written as words.
 
-SLIDE 1 — Title — 0:00–0:25
+SLIDE 1 - Our team and question
 
-I'm Mohammadpayam Taebi. My teammate is Arad Maleki, and our team is Boozines. We are both affiliated with the Chinese University of Hong Kong. This project asks a simple question: if a pricing safeguard checks each decision locally, what can it promise customers over many rounds? Our answer separates a mathematical guarantee from what particular learning agents actually do.
+Hello. I'm Mohammadpayam Taebi.
+My teammate is Arad Maleki.
+Our team is Boozines.
+We are both from the Chinese University of Hong Kong.
 
-SLIDE 2 — The pricing game — 0:25–1:00
+Our project asks a simple question.
+Can a rule that checks one price at a time protect customers over many rounds?
 
-There are two shops, each trying to earn profit. Customers can choose either shop or buy nothing. A guard allows prices that are nearly best for immediate profit against the rival's previous price. A cap is an actual trading round that limits both prices. Our graphical game lets people choose prices themselves, or watch saved learners. The screenshots explain the model; they are not human experimental data.
+SLIDE 2 - How the game works
 
-SLIDE 3 — Price precision — 1:00–1:35
+There are two shops.
+Each shop wants to make a profit.
+Customers can buy from either shop, or buy nothing.
 
-A safeguard can look stronger when the available price choices are coarse. On the fifteen-price board, the worst allowed long-run customer benefit is about seventy-two point one. With continuous prices, it falls to about sixty-six point three, below our unchanged target of sixty-eight point five. The starting cap is the same. These calculations concern every permitted continuation, rather than only the behavior our learners happened to find.
+We use a rule called a guard.
+It allows prices that give nearly the best profit against the other shop's last price.
 
-SLIDE 4 — Keeping the guard — 1:35–2:15
+We also use a cap. It limits both shops' prices for that round.
+People can choose prices in our game, or watch saved results.
+The game shows the rules. It is not a study of human players.
 
-We then compare learned behavior. Both treatments begin with the same cap and use the same clock, allocated memory and two-million-round training budget. One keeps the guard; the other permits the full original price grid afterward. Every bar shows full-grid customer benefit minus retained-guard benefit. All twelve bars are negative: keeping the guard helps customers in every pair, by about twelve point seven units on average. More legal choices also change learning difficulty, so equal training time does not mean equal competence.
+SLIDE 3 - More price choices
 
-SLIDE 5 — Repeating the cap — 2:15–2:45
+We calculate the lowest customer-benefit score the rule allows over many rounds.
+A higher score is better for customers.
 
-A separate comparison tests whether repeating the cap adds protection. Both treatments have five clock labels and equal allocated memory. Here the difference is recurring-cap benefit minus startup-guard benefit. All twelve bars are positive, averaging about zero point nine six units. These are descriptive results in one model. The saved endpoints still change between one and two million rounds, so we do not claim convergence.
+With fifteen price choices, this score is about seventy-two point one.
+When prices can change by any small amount within the same price range, it falls to about sixty-six point three.
+Our target stays at sixty-eight point five.
 
-SLIDE 6 — Methods — 2:45–3:20
+So the same starting cap does not always protect our target.
 
-The shops use established tabular Q-learning, not language models. No LLM game players were used in these experiments. After training, we stop learning and exploration and measure each saved pair's repeating behavior. A separately written implementation replays every training round of both follow-up studies: forty-eight million rounds for the recurring-cap comparison, and twenty-four million for guard removal. The implementations share a software runtime, which limits the independence of that check.
+SLIDE 4 - Keeping the guard
 
-SLIDE 7 — Contribution and limits — 3:20–4:00
+Next, we test programs that learn to choose prices.
+Both groups start with the same cap and train for two million rounds.
+They have the same clock and memory size.
 
-Our contribution is a controlled case connecting the scope of a welfare promise with observed pricing behavior, supported by a playable explanation. The methods themselves are established. A guard can help these learners without guaranteeing the stronger target against every allowed strategy. This is one model and budget, not proof of stable collusion or real-market protection. One full-grid shop even earns below static Nash. Dynamic incentives and continued adaptation remain open. The report contains the full evidence, limitations, prior work and substantial AI-assistance disclosure.
+One group keeps the guard.
+The other can then use all prices on the original price board.
+
+All twelve bars are below zero.
+Keeping the guard helps customers in all twelve pairs.
+The average gain is about twelve point seven score units.
+More price choices also change the learning task.
+
+SLIDE 5 - Using the cap again
+
+We also test using the cap again every four rounds.
+Both groups have the same clock and memory size.
+
+All twelve bars are above zero.
+Using the cap again helps customers by about zero point nine six units on average.
+
+Results still change between one million and two million training rounds.
+So we cannot say the learning has fully settled.
+
+SLIDE 6 - How we checked the work
+
+The shops learn from their profit, using a method called Q-learning.
+We did not use language models as players.
+
+After training, we stop learning and watch the saved price patterns repeat.
+
+A second program checks every training round in these two studies.
+That is forty-eight million rounds in one study, and twenty-four million in the other.
+
+The programs share some software.
+So the check could still miss a shared mistake.
+
+SLIDE 7 - What we learned
+
+The guard helps customers in these tests.
+But it does not guarantee our target for every allowed choice.
+
+We tested one simple market with a fixed training time.
+This does not prove the same result holds in real markets.
+We cannot claim that the shops have formed a lasting price agreement.
+
+Our report explains the methods, results and limits.
+It also explains how AI tools helped us build, check and write this work.
+
+Thank you.
