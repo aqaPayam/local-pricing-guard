@@ -5,11 +5,11 @@ AI Collusion Research Sprint, October 2026 · Team Boozines
 
 ## For judges
 
-- **[Play the game online](https://aqapayam.github.io/local-pricing-guard/)**
+- **[Open the game](https://aqapayam.github.io/local-pricing-guard/)** — [Play yourself](https://aqapayam.github.io/local-pricing-guard/recurring/) or [Watch saved learners](https://aqapayam.github.io/local-pricing-guard/reference/).
 - **[Read the final report](report.pdf)** — eight main pages, references and appendices follow.
 - **[Seven-slide presentation](slides.pdf)** and [four-minute recording script](VIDEO_SCRIPT.txt).
 - [Editable report source](latex/report/main.tex) and [Beamer source](latex/slides/main.tex).
-- [Evidence and downloadable release](https://github.com/aqaPayam/local-pricing-guard/releases/tag/submission-v2).
+- [Evidence and downloadable release](https://github.com/aqaPayam/local-pricing-guard/releases/tag/submission-v3).
 
 ## What we found
 
@@ -53,7 +53,7 @@ The GitHub Pages build changes URL paths for hosting. `report.pdf` and
 `slides.pdf` are the current LaTeX versions. Older versioned PDFs and frozen evidence archives retain their historical
 author metadata. The current submission is team Boozines, with Mohammadpayam
 Taebi and Arad Maleki, both at CUHK. Use the current unversioned PDFs or the
-submission-v2 release for submission. No experiment was rerun to make the static website.
+submission-v3 release for submission. No experiment was rerun to make the static website.
 
 ## Prior work, contribution and assistance
 
