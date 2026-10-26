@@ -1,0 +1,31 @@
+VIDEO RECORDING SCRIPT — approximately 4 minutes
+
+Open output/presentation/price-guard-research-beamer.pdf full screen. Record your screen and microphone while advancing through its seven slides. Read only the paragraphs, not these headings or timing labels. Speak slowly and pause briefly at each chart. No live game recording is required.
+
+SLIDE 1 — Title — 0:00–0:25
+
+I'm Mohammadpayam Taebi, affiliated with the Chinese University of Hong Kong. This project asks a simple question: if a pricing safeguard checks each decision locally, what can it promise customers over many rounds? Our answer separates a mathematical guarantee from what particular learning agents actually do.
+
+SLIDE 2 — The pricing game — 0:25–1:00
+
+There are two shops, each trying to earn profit. Customers can choose either shop or buy nothing. A guard allows prices that are nearly best for immediate profit against the rival's previous price. A cap is an actual trading round that limits both prices. Our graphical game lets people choose prices themselves, or watch saved learners. The screenshots explain the model; they are not human experimental data.
+
+SLIDE 3 — Price precision — 1:00–1:35
+
+A safeguard can look stronger when the available price choices are coarse. On the fifteen-price board, the worst allowed long-run customer benefit is about seventy-two point one. With continuous prices, it falls to about sixty-six point three, below our unchanged target of sixty-eight point five. The starting cap is the same. These calculations concern every permitted continuation, rather than only the behavior our learners happened to find.
+
+SLIDE 4 — Keeping the guard — 1:35–2:15
+
+We then compare learned behavior. Both treatments begin with the same cap and use the same clock, allocated memory and two-million-round training budget. One keeps the guard; the other permits the full original price grid afterward. Every bar shows full-grid customer benefit minus retained-guard benefit. All twelve bars are negative: keeping the guard helps customers in every pair, by about twelve point seven units on average. More legal choices also change learning difficulty, so equal training time does not mean equal competence.
+
+SLIDE 5 — Repeating the cap — 2:15–2:45
+
+A separate comparison tests whether repeating the cap adds protection. Both treatments have five clock labels and equal allocated memory. Here the difference is recurring-cap benefit minus startup-guard benefit. All twelve bars are positive, averaging about zero point nine six units. These are descriptive results in one model. The saved endpoints still change between one and two million rounds, so we do not claim convergence.
+
+SLIDE 6 — Methods — 2:45–3:20
+
+The shops use established tabular Q-learning, not language models. No LLM game players were used in these experiments. After training, we stop learning and exploration and measure each saved pair's repeating behavior. A separately written implementation replays every training round of both follow-up studies: forty-eight million rounds for the recurring-cap comparison, and twenty-four million for guard removal. The implementations share a software runtime, which limits the independence of that check.
+
+SLIDE 7 — Contribution and limits — 3:20–4:00
+
+Our contribution is a controlled case connecting the scope of a welfare promise with observed pricing behavior, supported by a playable explanation. The methods themselves are established. A guard can help these learners without guaranteeing the stronger target against every allowed strategy. This is one model and budget, not proof of stable collusion or real-market protection. One full-grid shop even earns below static Nash. Dynamic incentives and continued adaptation remain open. The report contains the full evidence, limitations, prior work and substantial AI-assistance disclosure.

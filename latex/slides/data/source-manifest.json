@@ -1,0 +1,20 @@
+[
+  {
+    "source": "research/guard-reference-results/analysis.json",
+    "sha256": "b37ddc0cd2a2844e89700bc3097ce5b6225164db861e9952cb7f2d428f92a592",
+    "meanDifference": {
+      "numerator": "-71666694001597459430390540863",
+      "denominator": "5628433844731135543109222400"
+    },
+    "displayDecimals": 6
+  },
+  {
+    "source": "research/matched-clock-results/analysis.json",
+    "sha256": "3bbbc757378f79c4bdf948166ac73458e2aa2ebc0ecaedc6876d55fc5e09f489",
+    "meanDifference": {
+      "numerator": "2420783571316325",
+      "denominator": "2533274790395904"
+    },
+    "displayDecimals": 6
+  }
+]

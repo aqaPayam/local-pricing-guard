@@ -1,0 +1,2 @@
+Compile main.tex with XeLaTeX twice (Overleaf: Menu > Compiler > XeLaTeX), or run tectonic main.tex.
+The source ZIP includes all image and data dependencies. No external game/model call is required to compile.

@@ -1,0 +1,13 @@
+{
+  "name": "local-pricing-guard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node research/demo-server.js",
+    "test:game": "node --test --test-isolation=none tests/guard-reference-game.test.js tests/matched-clock-game.test.js tests/recurring-game.test.js"
+  }
+}
